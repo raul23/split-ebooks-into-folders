@@ -12,8 +12,8 @@ import logging
 import os
 
 from split_into_folders import __version__
-from split_into_folders.lib import (namespace_to_dict, setup_log, split, blue, green, red, yellow,
-                                    OUTPUT_FILENAME_TEMPLATE, OUTPUT_METADATA_EXTENSION,
+from split_into_folders.lib import (namespace_to_dict, setup_log, split, blue,
+                                    green, red, yellow, OUTPUT_METADATA_EXTENSION,
                                     FILES_PER_FOLDER, FOLDER_PATTERN, START_NUMBER,
                                     LOGGING_FORMATTER, LOGGING_LEVEL)
 
@@ -229,7 +229,7 @@ def setup_argparser():
     desc_msg = 'Split the supplied ebook files (and the accompanying metadata' \
                'files if present) into folders with consecutive names that each ' \
                'contain the specified number of files.\n' \
-               'This script is based on the great ebook-tools written in Shell ' \
+               'This script is based on the great ebook-tools written in shell ' \
                'by na-- (See https://github.com/na--/ebook-tools).'
     parser = ArgumentParser(
         description="",
@@ -268,6 +268,11 @@ def setup_argparser():
     # ====================
     input_output_files_group = parser.add_argument_group(
         title=yellow('Input and output options'))
+    input_output_files_group.add_argument(
+        '--ome', '--output-metadata-extension', dest='output_metadata_extension',
+        metavar='EXTENSION', default=OUTPUT_METADATA_EXTENSION,
+        help=''' This is the extension of the metadata file associated with
+        an ebook.''' + get_default_message(OUTPUT_METADATA_EXTENSION))
     input_output_files_group.add_argument(
         name_input,
         help='''Folder with books which will be recursively scanned for files.
