@@ -94,11 +94,33 @@ To display the script `split_into_folders.py <./split_into_folders/scripts/split
   split them and their names. No moving operations will actually be executed.
 - ``-o, --output-folder`` uses by default the working directory under which the script is running to move all the files.
 
-Example: split 1000 ebooks into folders containing 15 each
+Example: split 1000 ebooks into folders containing 12 each
 ==========================================================
 Through the script ``split_into_folders.py``
 --------------------------------------------
+To split 1000 ebooks into folders with 12 each::
+
+ split_into_folders ~/Data/split/small -o ~/Data/split/output_folder --fpf 12 -s 1
+
+`:informat_source:` ``-s 1`` will start the folder names with 1 (by default it is 0)
+
+Sample output::
+
+ Total number of files to be split into folders: 1000
+ Number of files per folder: 12
+ Number of splits: 84
+ Starting splits...
+ End of splits!
 
 Through the API
 ---------------
+To split 1000 ebooks into folders with 12 each using the API::
+
+.. code-block:: python
+   
+   from split_into_folders.lib import split
+
+   retcode = split('/Users/test/Data/split/small',
+                   '/Users/test/Data/split/output_folder',
+                   files_per_folder=12, start_number=1)
 
