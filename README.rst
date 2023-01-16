@@ -77,7 +77,7 @@ To display the script `split_into_folders.py <./split_into_folders/scripts/split
      -s, --start-number START_NUMBER             The number of the first folder. (default: 0)
      -f, --folder-pattern PATTERN                The print format string that specifies the pattern with which new folders will be created. 
                                                  By default it creates folders like 00000000, 00001000, 00002000, ..... (default: %05d000)
-     --fpf, --files-per-folder FILES_PER_FOLDER  How many files should be moved to each folder. (default: 1000)
+     --fpf, --files-per-folder FILES_PER_FOLDER  How many files should be moved to each folder. (default: 100)
 
    Input and output options:
      folder_with_books                           Folder with books which will be recursively scanned for files. The found files (and the 
