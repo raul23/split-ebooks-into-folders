@@ -56,7 +56,7 @@ with open(os.path.join(dirpath, "requirements.txt")) as f:
 setup(name='split-ebooks-into-folders',
       version=VERSION,
       description='''Split the supplied ebook files (and the accompanying metadata files if present) 
-      into folders with consecutive names that each contain the specified number of files.''',
+      into folders with consecutive names where each contains the specified number of files.''',
       long_description=README,
       long_description_content_type='text/x-rst',
       classifiers=[
