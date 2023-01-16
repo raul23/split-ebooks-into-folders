@@ -102,7 +102,7 @@ To split 1000 ebooks into folders with 12 files each::
 
  split_into_folders ~/Data/split/small -o ~/Data/split/output_folder --fpf 12 -s 1
 
-`:informat_source:` ``-s 1`` will start the folder names with 1 (by default it is 0)
+`:information_source:` ``-s 1`` will start the folder names with 1 (by default it is 0)
 
 Sample output::
 
