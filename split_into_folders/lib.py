@@ -1,3 +1,10 @@
+"""Library used by the script split_into_folders.py
+
+The function `split()` is a Python port of `split-into-folders.sh` from `ebook-tools` written in shell by
+`na--`.
+
+Ref.: https://github.com/na--/ebook-tools/blob/master/split-into-folders.sh
+"""
 import logging
 import math
 import os
