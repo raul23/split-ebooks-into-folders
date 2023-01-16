@@ -49,7 +49,7 @@ Uninstall
 =========
 To uninstall the `split_into_folders <./split_into_folders/>`_ package::
 
- $ pip uninstall split_into_folders
+ $ pip uninstall split-ebooks-into-folders
 
 Script options
 ==============
