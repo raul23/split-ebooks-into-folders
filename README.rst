@@ -60,7 +60,7 @@ To display the script `split_into_folders.py <./split_into_folders/scripts/split
 
    Split the supplied ebook files (and the accompanying metadatafiles if present) into folders with consecutive names 
    that each contain the specified number of files.
-   This script is based on the great ebook-tools written in Shell by na-- (See https://github.com/na--/ebook-tools).
+   This script is based on the great ebook-tools written in shell by na-- (See https://github.com/na--/ebook-tools).
 
    General options:
      -h, --help                                  Show this help message and exit.
