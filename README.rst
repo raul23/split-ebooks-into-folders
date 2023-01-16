@@ -86,3 +86,18 @@ To display the script `split_into_folders.py <./split_into_folders/scripts/split
      -o, --output-folder PATH                    The output folder in which all the new consecutively named folders will be created. The 
                                                  default value is the current working directory. 
                                                  (default: /Users/test/split_into_folders/test_installation)
+
+`:information_source:` Explaining some of the options/arguments
+
+- ``-d, --dry-run`` is a very useful option to simulate how the files will be moved, i.e. the number of folders need to split
+  split them and their names.
+- ``-o, --output-folder`` uses by default the working directory under which the script is running to move all the files.
+
+Example: split 1000 ebooks into folders containing 15 each
+==========================================================
+Through the script ``split_into_folders.py``
+--------------------------------------------
+
+Through the API
+---------------
+
