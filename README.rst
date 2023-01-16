@@ -114,7 +114,7 @@ Sample output::
 
 Through the API
 ---------------
-To split 1000 ebooks into folders with 12 each using the API::
+To split 1000 ebooks into folders with 12 each using the API:
 
 .. code-block:: python
    
