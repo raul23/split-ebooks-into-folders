@@ -31,16 +31,12 @@ REVERSE = False
 
 # Input/Output options
 # ====================
-OUTPUT_FILENAME_TEMPLATE = "${d[AUTHORS]// & /, } - ${d[SERIES]:+[${d[SERIES]}] " \
-                           "- }${d[TITLE]/:/ -}${d[PUBLISHED]:+ (${d[PUBLISHED]%%-*})}" \
-                           "${d[ISBN]:+ [${d[ISBN]}]}.${d[EXT]}"
-# This is the extension of the additional metadata file that is saved next to
-# each newly renamed file
+# This is the extension of the metadata file associated with an ebook
 OUTPUT_METADATA_EXTENSION = 'meta'
 
 # Split options
 # =============
-FILES_PER_FOLDER = 1000
+FILES_PER_FOLDER = 100
 FOLDER_PATTERN = '%05d000'
 START_NUMBER = 0
 
@@ -207,6 +203,10 @@ def split(folder_with_books,
         msg = red("Output folder doesn't exist: ")
         logger.error(f'{msg} {output_folder}')
         return 1
+    if not Path(folder_with_books).exists():
+        msg = red("Input folder doesn't exist: ")
+        logger.error(f'{msg} {folder_with_books}')
+        return 1
     files = []
     for fp in Path(folder_with_books).rglob('*'):
         # File extension
@@ -219,7 +219,7 @@ def split(folder_with_books,
             files.append(fp)
         # TODO: debug logging skip directory/file
     # TODO: important sort within glob?
-    logger.info("Files sorted {}".format("in desc" if reverse else "in asc"))
+    logger.debug("Files sorted {}".format("in desc" if reverse else "in asc"))
     files.sort(key=lambda x: x.name, reverse=reverse)
     current_folder_num = start_number
     start_index = 0
@@ -275,4 +275,3 @@ def split(folder_with_books,
                                                  metadata_name)
                     move(metada_file_to_move, metadata_dest, clobber=False)
     return 0
-
