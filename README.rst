@@ -15,6 +15,8 @@ This is a Python port of `split-into-folders.sh
 - `find-isbns <https://github.com/raul23/find-isbns>`_: find ISBNs from ebooks (pdf, djvu, epub) or any string given as input to the script
 - `ocr <https://github.com/raul23/ocr>`_: run OCR on documents (pdf, djvu, and images)
 
+|
+
 .. contents:: **Contents**
    :depth: 3
    :local:
