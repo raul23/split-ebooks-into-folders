@@ -128,7 +128,7 @@ To split 1000 ebooks into folders with 12 files each using the API:
 
 By default when using the API, the loggers are disabled. If you want to enable them, call the
 function ``setup_log()`` (with the desired log level in all caps) at the beginning of your code before 
-the conversion function ``convert()``:
+the function ``split()``:
 
 .. code-block:: python
 
