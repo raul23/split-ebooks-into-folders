@@ -1,7 +1,7 @@
 =========================
 split-ebooks-into-folders
 =========================
-Split the supplied ebook files (and the accompanying metadata files if present) into folders with consecutive names that each contain the specified number of files.
+Split the supplied ebook files (and the accompanying metadata files if present) into folders with consecutive names where each contain the specified number of files.
 
 This is a Python port of `split-into-folders.sh 
 <https://github.com/na--/ebook-tools/blob/master/split-into-folders.sh>`_ from `ebook-tools 
