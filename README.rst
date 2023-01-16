@@ -54,3 +54,35 @@ To uninstall the `split_into_folders <./split_into_folders/>`_ package::
 Script options
 ==============
 To display the script `split_into_folders.py <./split_into_folders/scripts/split_into_folders.py>`_ list of options and their descriptions::
+
+   $ split_into_folders -h
+   usage: split_into_folders [OPTIONS] {folder_with_books} [{output_folder}]
+
+   Split the supplied ebook files (and the accompanying metadatafiles if present) into folders with consecutive names 
+   that each contain the specified number of files.
+   This script is based on the great ebook-tools written in Shell by na-- (See https://github.com/na--/ebook-tools).
+
+   General options:
+     -h, --help                                  Show this help message and exit.
+     -v, --version                               Show program's version number and exit.
+     -q, --quiet                                 Enable quiet mode, i.e. nothing will be printed.
+     --verbose                                   Print various debugging information, e.g. print traceback when there is an exception.
+     -d, --dry-run                               If this is enabled, no file rename/move/symlink/etc. operations will actually be executed.
+     -r, --reverse                               If this is enabled, the files will be sorted in reverse (i.e. descending) order. By default, 
+                                                 they are sorted in ascending order.
+     --log-level {debug,info,warning,error}      Set logging level. (default: info)
+     --log-format {console,only_msg,simple}      Set logging formatter. (default: only_msg)
+
+   Split options:
+     -s, --start-number START_NUMBER             The number of the first folder. (default: 0)
+     -f, --folder-pattern PATTERN                The print format string that specifies the pattern with which new folders will be created. 
+                                                 By default it creates folders like 00000000, 00001000, 00002000, ..... (default: %05d000)
+     --fpf, --files-per-folder FILES_PER_FOLDER  How many files should be moved to each folder. (default: 1000)
+
+   Input and output options:
+     folder_with_books                           Folder with books which will be recursively scanned for files. The found files (and the 
+                                                 accompanying metadata files if present) will be split into folders with consecutive names 
+                                                 that each contain the specified number of files.
+     -o, --output-folder PATH                    The output folder in which all the new consecutively named folders will be created. The 
+                                                 default value is the current working directory. 
+                                                 (default: /Users/test/split_into_folders/test_installation)
