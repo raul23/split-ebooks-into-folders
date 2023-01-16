@@ -124,3 +124,19 @@ To split 1000 ebooks into folders with 12 files each using the API:
                    '/Users/test/Data/split/output_folder',
                    files_per_folder=12, start_number=1)
 
+|
+
+By default when using the API, the loggers are disabled. If you want to enable them, call the
+function ``setup_log()`` (with the desired log level in all caps) at the beginning of your code before 
+the conversion function ``convert()``:
+
+.. code-block:: python
+
+   from split_into_folders.lib import split, setup_log
+   
+   setup_log(logging_level='INFO')
+   retcode = split('/Users/test/Data/split/small',
+                   '/Users/test/Data/split/output_folder',
+                   files_per_folder=12, start_number=1)
+
+   
