@@ -80,12 +80,13 @@ To display the script `split_into_folders.py <./split_into_folders/scripts/split
      --fpf, --files-per-folder FILES_PER_FOLDER  How many files should be moved to each folder. (default: 100)
 
    Input and output options:
-     folder_with_books                           Folder with books which will be recursively scanned for files. The found files (and the 
-                                                 accompanying metadata files if present) will be split into folders with consecutive names 
-                                                 that each contain the specified number of files.
-     -o, --output-folder PATH                    The output folder in which all the new consecutively named folders will be created. The 
-                                                 default value is the current working directory. 
-                                                 (default: /Users/test/split_into_folders/test_installation)
+     --ome, --output-metadata-extension EXTENSION  This is the extension of the metadata file associated with a an ebook. (default: meta)
+     folder_with_books                             Folder with books which will be recursively scanned for files. The found files (and the 
+                                                   accompanying metadata files if present) will be split into folders with consecutive names 
+                                                   that each contain the specified number of files.
+     -o, --output-folder PATH                      The output folder in which all the new consecutively named folders will be created. The 
+                                                   default value is the current working directory. 
+                                                   (default: /Users/test/split_into_folders/test_installation)
 
 `:information_source:` Explaining some of the options/arguments
 
