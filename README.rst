@@ -90,7 +90,7 @@ To display the script `split_into_folders.py <./split_into_folders/scripts/split
 `:information_source:` Explaining some of the options/arguments
 
 - ``-d, --dry-run`` is a very useful option to simulate how the files will be moved, i.e. the number of folders needed to
-  split them and their names. No actual moving operations will actually be executed.
+  split them and their names. No moving operations will actually be executed.
 - ``-o, --output-folder`` uses by default the working directory under which the script is running to move all the files.
 
 Example: split 1000 ebooks into folders containing 15 each
