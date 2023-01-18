@@ -12,7 +12,9 @@ This is a Python port of `split-into-folders.sh
 - `convert-to-txt <https://github.com/raul23/convert-to-txt>`_: convert documents (pdf, djvu, epub, word) to txt
 - `find-isbns <https://github.com/raul23/find-isbns>`_: find ISBNs from ebooks (pdf, djvu, epub) or any string given as input to the script
 - `ocr <https://github.com/raul23/ocr>`_: run OCR on documents (pdf, djvu, and images)
-
+- `organize-ebooks <https://github.com/raul23/organize-ebooks>`_: automatically organize folders with potentially huge amounts of 
+  unorganized ebooks. It leverages the three previous Python scripts.
+  
 |
 
 .. contents:: **Contents**
