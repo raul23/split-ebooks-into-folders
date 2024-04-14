@@ -11,11 +11,6 @@ from `ebook-tools <https://github.com/na--/ebook-tools>`_ written in shell by `n
   - `ocr <https://github.com/raul23/ocr>`_: run OCR on documents (pdf, djvu, and images)
   - `organize-ebooks <https://github.com/raul23/organize-ebooks>`_: automatically organize folders with potentially huge amounts of 
     unorganized ebooks. It leverages the three previous Python scripts.
-
-.. contents:: **Contents**
-   :depth: 3
-   :local:
-   :backlinks: top
    
 Dependencies
 ============
